@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-alpine
+FROM openjdk:17-jdk-alpine
 WORKDIR /app
 COPY target/my-dropwizard-app.jar app.jar
 COPY config.yml /app/config.yml
