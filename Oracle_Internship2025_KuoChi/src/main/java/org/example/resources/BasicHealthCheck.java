@@ -13,7 +13,7 @@ public class BasicHealthCheck extends HealthCheck {
 
     @GET
     @Path("/health")
-    protected Response healthCheck() {
+    public Response healthCheck() {
         return Response.ok("{\"status\": \"healthy\"}").build();
     }
 
