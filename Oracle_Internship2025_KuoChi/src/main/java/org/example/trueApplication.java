@@ -27,7 +27,8 @@ public class trueApplication extends Application<trueConfiguration> {
     public void run(final trueConfiguration configuration,
                     final Environment environment) {
 
-        environment.jersey().register(new CorsFilter());
+        CorsFilter corsFilter = new CorsFilter();
+        environment.jersey().register(corsFilter);
 
         MinCoinCalculator minCoinCalculator = new MinCoinCalculator();
         environment.jersey().register(minCoinCalculator);
