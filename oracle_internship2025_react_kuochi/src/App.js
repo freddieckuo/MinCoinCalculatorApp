@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import './App.css';
 
-const REST_API_CALCULATOR_URL = "http://localhost:8080/api/submit";
+const REST_API_CALCULATOR_URL = "http://13.229.181.75:8080/api/submit";
 
 export default function App() {
     const [targetAmount, setTargetAmount] = useState("");
