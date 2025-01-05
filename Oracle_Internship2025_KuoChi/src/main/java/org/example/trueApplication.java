@@ -33,7 +33,7 @@ public class trueApplication extends Application<trueConfiguration> {
         environment.jersey().register(minCoinCalculator);
 
         BasicHealthCheck basicHealthCheck = new BasicHealthCheck();
-        environment.healthChecks().register("basic", basicHealthCheck);
+        environment.jersey().register(basicHealthCheck);
     }
 
 }

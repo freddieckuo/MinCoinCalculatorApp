@@ -9,7 +9,7 @@ public class BasicHealthCheck extends HealthCheck {
 
     @GET
     @Path("/health")
-    protected Result check() throws Exception {
-        return HealthCheck.Result.healthy();
+    protected Response healthCheck() {
+        return Response.ok("{\"status\": \"healthy\"}").build();
     }
 }
