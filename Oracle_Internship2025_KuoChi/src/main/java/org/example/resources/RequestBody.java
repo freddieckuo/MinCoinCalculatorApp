@@ -3,14 +3,10 @@ package org.example.resources;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
 import org.hibernate.validator.constraints.Range;
 
 import java.util.List;
 
-@Getter
-@Setter
 public class RequestBody {
     @JsonProperty("targetAmount")
     @NotNull(message = "Target amount is required.")
@@ -20,4 +16,20 @@ public class RequestBody {
     @JsonProperty("coinDenominations")
     @NotEmpty(message = "Coin denominator can not be empty.")
     private List<Number> coinDenominations;
+
+    public Double getTargetAmount() {
+        return targetAmount;
+    }
+
+    public void setTargetAmount(Double targetAmount) {
+        this.targetAmount = targetAmount;
+    }
+
+    public List<Number> getCoinDenominations() {
+        return coinDenominations;
+    }
+
+    public void setCoinDenominations(List<Number> coinDenominations) {
+        this.coinDenominations = coinDenominations;
+    }
 }
