@@ -3,4 +3,4 @@ org/example/resources/CorsFilter.class
 org/example/resources/MinCoinCalculator.class
 org/example/trueConfiguration.class
 org/example/trueApplication.class
-org/example/health/BasicHealthCheck.class
+org/example/resources/BasicHealthCheck.class

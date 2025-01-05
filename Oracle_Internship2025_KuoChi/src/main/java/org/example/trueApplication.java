@@ -3,7 +3,7 @@ package org.example;
 import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
-import org.example.health.BasicHealthCheck;
+import org.example.resources.BasicHealthCheck;
 import org.example.resources.CorsFilter;
 import org.example.resources.MinCoinCalculator;
 
