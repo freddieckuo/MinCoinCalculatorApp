@@ -1,0 +1,6 @@
+org/example/resources/RequestBody.class
+org/example/resources/CorsFilter.class
+org/example/resources/MinCoinCalculator.class
+org/example/trueConfiguration.class
+org/example/trueApplication.class
+org/example/health/BasicHealthCheck.class
